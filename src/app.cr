@@ -9,7 +9,7 @@ DEFAULT_PORT = 8080
 server = HTTP::Server.new do |context|
     params = context.request.query_params
 
-    locale = params["locale"] ? params["locale"] : DEFAULT_LOCALE
+    locale = params["locale"]? ? params["locale"]? : DEFAULT_LOCALE
 
     hash = Hash(String, YAML::Any).new
 
