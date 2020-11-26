@@ -28,7 +28,7 @@ server = HTTP::Server.new do |context|
         md5_answers << Digest::MD5.hexdigest(answer.to_s.downcase)
     end
 
-    response = { current_question.to_s => md5_answers }
+    response = { "q" => current_question.to_s, "a" => md5_answers }
 
   context.response.content_type = "application/json"
   context.response.print response.to_json
