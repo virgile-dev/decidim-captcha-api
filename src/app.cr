@@ -8,7 +8,7 @@ DEFAULT_PORT = 8080
 
 hash = Hash(String, YAML::Any).new
 
-Dir.glob("src/locales/*.yml") do |file|
+Dir.glob("**/locales/*.yml") do |file|
     current_locale = File.basename(file, File.extname(file))
     yaml = File.open(file.to_s) { |content| hash[current_locale.to_s] = YAML.parse(content) }
 end
