@@ -1,6 +1,7 @@
 PORT := 8080
-REGISTRY_ENDPOINT := rg.fr-par.scw.cloud
-REGISTRY_NAMESPACE := serveless
+REGION := fr-par
+REGISTRY_ENDPOINT := rg.$(REGION).scw.cloud
+REGISTRY_NAMESPACE := "decidim-captcha-api"
 IMAGE_NAME := decidim-captcha-api
 VERSION := latest
 TAG := $(REGISTRY_ENDPOINT)/$(REGISTRY_NAMESPACE)/$(IMAGE_NAME):$(VERSION)
@@ -12,4 +13,14 @@ local-build:
 	crystal build -p src/app.cr -o dist/app
 
 build:
-	docker build . --tag $(TAG)
+	docker build . --compress --tag $(TAG)
+
+push:
+	docker push $(TAG)
+
+deploy:
+	@make build
+	@make push
+
+login:
+	docker login $(REGISTRY_ENDPOINT) -u userdoesnotmatter -p $(TOKEN)

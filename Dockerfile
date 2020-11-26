@@ -1,12 +1,12 @@
-FROM alpine:latest as builder
-RUN apk add -u crystal shards libc-dev
-WORKDIR /src
+FROM crystallang/crystal:latest as builder
+WORKDIR /workdir
 COPY ./src/app.cr .
-RUN crystal build --release --static ./src/app.cr -o /dist/app
+RUN mkdir dist
+RUN crystal build --release --static app.cr -o ./dist/app
 
 FROM busybox
 WORKDIR /app
 EXPOSE 8080
 ENV PORT 8080
-COPY --from=builder /dist/app /app/app
+COPY --from=builder /workdir/dist/app /app/app
 CMD ["./app"]
