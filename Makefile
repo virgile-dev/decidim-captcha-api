@@ -15,6 +15,9 @@ local-build:
 build:
 	docker build . --compress --tag $(TAG)
 
+run:
+	docker run -it -p $(PORT):$(PORT) --rm $(TAG)
+
 push:
 	docker push $(TAG)
 
@@ -24,3 +27,6 @@ deploy:
 
 login:
 	docker login $(REGISTRY_ENDPOINT) -u userdoesnotmatter -p $(TOKEN)
+
+make test:
+	curl localhost:$(PORT)
