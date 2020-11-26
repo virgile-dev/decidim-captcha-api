@@ -6,19 +6,17 @@ require "digest/md5"
 DEFAULT_LOCALE = "en"
 DEFAULT_PORT = 8080
 
+hash = Hash(String, YAML::Any).new
+
+Dir.glob("src/locales/*.yml") do |file|
+    current_locale = File.basename(file, File.extname(file))
+    yaml = File.open(file.to_s) { |content| hash[current_locale.to_s] = YAML.parse(content) }
+end
+
 server = HTTP::Server.new do |context|
     params = context.request.query_params
 
     locale = params["locale"]? ? params["locale"]? : DEFAULT_LOCALE
-
-    hash = Hash(String, YAML::Any).new
-
-     Dir.glob("src/locales/*.yml") do |file|
-        current_locale = File.basename(file, File.extname(file))
-            yaml = File.open(file.to_s) do |content|
-                hash[current_locale.to_s] = YAML.parse(content)
-            end
-        end
 
     hash_locale = hash.keys.includes?(locale) ? hash[locale].as_h : hash[DEFAULT_LOCALE].as_h
     random_question = Random.new.rand(0..hash_locale.keys.size - 1)
