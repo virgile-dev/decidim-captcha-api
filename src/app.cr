@@ -25,7 +25,7 @@ server = HTTP::Server.new do |context|
     md5_answers = [] of String | Int32
 
     hash_locale[current_question].as_a.each do |answer|
-        md5_answers << Digest::MD5.hexdigest(answer.to_s)
+        md5_answers << Digest::MD5.hexdigest(answer.to_s.downcase)
     end
 
     response = { current_question.to_s => md5_answers }
