@@ -11,7 +11,7 @@ local-run:
 
 local-build:
 	crystal build -p src/app.cr -o dist/app
-	cp -r src/locales dist/locales
+	cp -r src/locales dist
 
 build:
 	docker build . --compress --tag $(TAG)
