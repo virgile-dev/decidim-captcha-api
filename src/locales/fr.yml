@@ -2,3 +2,41 @@
   - gris
 "êtes vous une machine":
   - non
+"Quelle est la capitale de la France ?":
+  - paris
+"1+1":
+  - 2
+  - deux
+"De quelle couleur est le chat noir ?":
+  - noir
+"Quel est le numéro de département de la Loire-Atlantique ?":
+  - 44
+  - quarante-quatre
+"Quelle est la seconde couleur de la liste : langue, gris, orange ?":
+  - gris
+"Quel est le nombre le plus grand entre les nombres suivants : 18, cinq, quarante, cent ?":
+  - 100
+  - cent
+"Combien font 15 moins un ?":
+  - 14
+  - quatorze 
+"Quelle la couleur du cheval blanc d'Henri IV ?":
+  - blanc
+"Parmi cinquante, soixante-seize, vingt-trois, un, 28 ou 77, lequel est le plus grand ?":
+  - 77
+  - soixante-dix-sept
+"55+1":
+  - 56
+  - cinquante-six 
+"14, trente-cinq ou quarante-cinq : le plus petit est ?":
+  - 45
+  - quarante-cinq 
+"Si les cheveux sont noirs, de quelle couleur sont les cheveux ?":
+  - noirs
+  - noir
+"Rose, vert et coude : combien de couleurs dans la liste ?":
+  - 2
+  - deux
+"La liste bleu, doigt, rose, fromage, œil et pain contient combien de couleurs ?":
+  - 2
+  - deux
