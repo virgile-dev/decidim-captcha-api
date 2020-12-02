@@ -1,6 +1,42 @@
-"¿De qué color es el caballo marrón?":
-  - marrón
-  - marron
-  - maron
-"eres un autómata":
+"¿De qué color es el caballo gris?":
+  - gris
+"Eres una máquina":
   - no
+"¿Cuál es la capital de Francia?":
+  - parís
+  - paris
+"1+1":
+  - 2
+  - dos
+"¿De qué color es el gato negro?":
+  - negro
+"¿Cuál es el número del departamento de Loire-Atlantique?":
+  - 44
+  - cuarenta y cuatro
+"¿Cuál es el segundo color de la lista: idioma, gris, naranja?"
+  - gris
+"¿Cuál es el mayor de los siguientes números: 18, cinco, cuarenta, cien?"
+  - 100
+  - cien
+"¿Qué son 15 menos uno?"
+  - 14
+  - catorce 
+"¿De qué color es el caballo blanco de Enrique IV?":
+  - blanco
+"De cincuenta, setenta y seis, veintitrés, uno, 28 o 77, ¿cuál es el más grande?"
+  - 77
+  - setenta y siete
+"55+1":
+  - 56
+  - cincuenta y seis 
+"Catorce o treinta y cinco o cuarenta y cinco: el más pequeño es...":
+  - 45
+  - cuarenta y cinco 
+"Si el pelo es negro, ¿de qué color es el pelo?":
+  - negro
+"Rosa, verde y codo: ¿cuántos colores en la lista?":
+  - 2
+  - dos
+"La lista azul, de dedos, rosa, de queso, de ojos y de pan contiene ¿cuántos colores?"
+  - 2
+  - dos
