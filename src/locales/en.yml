@@ -1,4 +1,42 @@
-"What color is the white horse?":
-  - white
-"Are you a robot?":
+"What color is the gray horse?":
+  - gray
+"Are you a machine":
   - no
+"What is the capital of France?":
+  - paris
+"1+1":
+  - 2
+  - both
+"What color is the black cat?":
+  - black
+"What is the number of the department of Loire-Atlantique?":
+  - 44
+  - forty-four
+"What is the second color in the list: language, gray, orange?":
+  - gray
+"What is the greatest number among the following numbers: 18, five, forty, one hundred?":
+  - 100
+  - one hundred
+"How much is 15 minus one?":
+  - 14
+  - fourteen 
+"What is the color of the white horse of Henry IV?":
+  - white
+"Among fifty, seventy-six, twenty-three, one, 28 or 77, which is the greatest?":
+  - 77
+  - seventy-seven
+"55+1":
+  - 56
+  - fifty-six 
+"Fourteen, thirty-five or forty-five: the smallest is...":
+  - 45
+  - forty-five 
+"If the hair is black, what color is the hair?":
+  - black
+  - black
+"Pink, green and elbow: how many colors in the list?":
+  - 2
+  - both
+"The blue, finger, pink, cheese, eye and bread list contains how many colors?":
+  - 2
+  - both
