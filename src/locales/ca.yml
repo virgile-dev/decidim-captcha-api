@@ -1,4 +1,41 @@
-"De quin color és el cavall negre?":
-  - negre
-"sou un ordinador?":
+"De quin color és el cavall gris?":
+  - gris
+"Ets una màquina":
   - no
+"Quina és la capital de França?":
+  - París
+"1 + 1":
+  - 2
+  - dos
+"De quin color és el gat negre?":
+  - negre
+"Quin és el número del departament de Loire-Atlantique?":
+  - 44
+  - quaranta-quatre
+"Quin és el segon color de la llista: idioma, gris, taronja?":
+  - gris
+"Quin és el nombre més gran entre els números següents: 18, cinc, quaranta, cent?":
+  - 100
+  - cent
+"Quant val 15 menys un?":
+  - 14
+  - catorze
+"De quin color és el cavall blanc d'Enric IV?":
+  - blanc
+"Entre cinquanta, setanta-sis, vint-i-tres, un, 28 o 77, quin és el més gran?":
+  - 77
+  - setanta-set
+"55 + 1":
+  - 56
+  - cinquanta-sis
+"Catorze, trenta-cinc o quaranta-cinc: el més petit és ...":
+  - 45
+  - quaranta-cinc
+"Si el cabell és negre, de quin color és el cabell?":
+  - negre
+"Rosa, verd i colze: quants colors de la llista?":
+  - 2
+  - dos
+"La llista blava, de dit, rosa, formatge, ulls i pa conté quants colors?":
+  - 2
+  - dos
